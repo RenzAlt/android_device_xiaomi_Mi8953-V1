@@ -7,6 +7,11 @@
 # Inherit from mititanium-common
 $(call inherit-product, device/xiaomi/mititanium-common/mititanium.mk)
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.xml,hardware/mititanium-module/audio/Mi8953/mixer_paths/,$(TARGET_COPY_OUT_VENDOR)/etc/) \
+    $(call find-copy-subdir-files,*.xml,hardware/mititanium-module/audio/Mi8953/platform_info/,$(TARGET_COPY_OUT_VENDOR)/etc/)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom 
