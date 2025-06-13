@@ -7,13 +7,13 @@
 # Inherit from common mititanium-common
 include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/vince
+DEVICE_PATH := device/xiaomi/Mi8953
 
 # Display
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/vince_defconfig
+TARGET_KERNEL_CONFIG := vendor/Mi8953_defconfig
 
 # Filesystem
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
@@ -43,4 +43,4 @@ TARGET_USERIMAGES_USE_EXT4 := true
 VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
 # Inherit from the proprietary version
-include vendor/xiaomi/vince/BoardConfigVendor.mk
+include vendor/xiaomi/Mi8953/BoardConfigVendor.mk

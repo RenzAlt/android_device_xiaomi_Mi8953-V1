@@ -12,15 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from vince device
-$(call inherit-product, device/xiaomi/vince/device.mk)
+# Inherit from Mi8953 device
+$(call inherit-product, device/xiaomi/Mi8953/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := vince
-PRODUCT_NAME := lineage_vince
+PRODUCT_DEVICE := Mi8953
+PRODUCT_NAME := lineage_Mi8953
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 5 Plus
+PRODUCT_MODEL := MSM8953
 PRODUCT_MANUFACTURER := Xiaomi
+TARGET_VENDOR := Xiaomi
 
 # Build Name
 BUILD_USERNAME := RenzAlt

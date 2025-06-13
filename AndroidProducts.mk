@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_vince.mk
+    $(LOCAL_DIR)/lineage_Mi8953.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_vince-user \
-    lineage_vince-userdebug \
-    lineage_vince-eng
+    lineage_Mi8953-user \
+    lineage_Mi8953-userdebug \
+    lineage_Mi8953-eng

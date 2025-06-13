@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=vince
+export DEVICE=Mi8953
 export DEVICE_COMMON=mititanium-common
 export VENDOR=xiaomi
 
