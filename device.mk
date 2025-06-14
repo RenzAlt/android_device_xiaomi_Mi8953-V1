@@ -16,6 +16,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,hardware/mititanium-module/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/)
 
+# Media
+PRODUCT_COPY_FILES += \
+    hardware/mititanium-module/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    hardware/mititanium-module/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    hardware/mititanium-module/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom 
