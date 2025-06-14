@@ -12,6 +12,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*.xml,hardware/mititanium-module/audio/Mi8953/mixer_paths/,$(TARGET_COPY_OUT_VENDOR)/etc/) \
     $(call find-copy-subdir-files,*.xml,hardware/mititanium-module/audio/Mi8953/platform_info/,$(TARGET_COPY_OUT_VENDOR)/etc/)
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,hardware/mititanium-module/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom 
